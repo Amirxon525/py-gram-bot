@@ -1,6 +1,6 @@
-from pygrambot.updater import Updater
-from pygrambot.handlers import MessageHandler
-from pygrambot.types import Update
+from nt_pygrambot.updater import Updater
+from nt_pygrambot.handlers import MessageHandler
+from nt_pygrambot.types import Update
 from config import TOKEN
 
 

@@ -4,7 +4,14 @@ from .types import Update
 class Dispatcher:
 
     def __init__(self):
-        pass
+        self.handlers = []
+
+    def add_handler(self, handler):
+        if handler not in self.handlers:
+            self.handlers.append(handler)
 
     def process_update(self, update: Update):
-        print(update.update_id)
+        for handler in self.handlers:
+            if handler.check_update(update):
+                handler.callback(update)
+                break

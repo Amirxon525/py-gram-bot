@@ -33,6 +33,10 @@ class Updater:
                     message_id=item['message']['message_id'], 
                     from_user=user
                 )
+
+                if 'text' in item['message']:
+                    message.text = item['message']['text']
+
                 update.message = message
 
             updates.append(update)

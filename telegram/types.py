@@ -1,3 +1,7 @@
+import requests
+from config import TOKEN
+
+
 class User:
 
     def __init__(
@@ -29,11 +33,18 @@ class Message:
         self.photo = photo
         self.sickter = sickter
 
+    def reply_text(self, text: str):
+        params = {
+            'chat_id': self.from_user.id,
+            'text': text
+        }
+        requests.get(f"https://api.telegram.org/bot{TOKEN}/sendMessage", params=params)
+
 
 class Update:
 
     def __init__(
-            self, 
+            self,
             update_id: int, 
             message: Message | None = None,
             edited_message: Message | None = None,
@@ -41,4 +52,3 @@ class Update:
         self.update_id = update_id
         self.message = message
         self.edited_message = edited_message
-

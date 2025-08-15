@@ -9,9 +9,9 @@ def handle_message(update: Update):
 
     if message.text:
         if message.text == '/start':
-            message.reply_text("assalomu alaykum. ECHO BOT")
+            message.reply_text(TOKEN, "assalomu alaykum. ECHO BOT")
         else:
-            message.reply_text(message.text)
+            message.reply_text(TOKEN, message.text)
     elif message.contact:
         pass
     elif message.photo:

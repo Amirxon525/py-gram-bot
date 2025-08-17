@@ -3,11 +3,11 @@ from setuptools import setup, find_packages
 setup(
     name="tigram_nt_bot",
     version="0.1.0",
-    author="SN02",
+    author="SN2",
     description="A simple pyton telegram libary",
     long_description=open("README.md").read(),
     long_description_content_type="text/markdown",
-    url="https://github.com/ziyocamp/py-gram-bot",
+    url="https://github.com/Amirxon525/py-gram-bot",
     packages=find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",

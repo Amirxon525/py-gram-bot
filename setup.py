@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="nt-telegram-bot",
+    name="tigram_nt_bot",
     version="0.1.0",
     author="SN02",
     description="A simple pyton telegram libary",

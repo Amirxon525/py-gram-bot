@@ -14,7 +14,7 @@ from config import TOKEN
 ## ⚙️ O‘rnatish
 
 ```bash
-pip install nt-telegram-bot
+pip install tigram_nt_bot
 ```
 
 ## 🚀 Boshlang‘ich foydalanish
